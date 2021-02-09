@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+    
+ 
+<body>
+    
+<img src="img/Logo.jpg" id="logo1">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="nav1">
+ <div class="navbar-header">
+     <a class="navbar-brand" href="">EVENTRONS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+</nav>
+    
+
+<div class="hero-image">
+ </div>  
+ <div class="container"> 
+ <div class="column">
+     <div class="row">
+     <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/webinar.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>webinars</h2>
+      <p>book a seat</p>
+    </div>
+  </div>
+</div> 
+     
+ </div>
+</div>
+<div class="column">
+  <div class="row">    
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/concert.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>concerts</h2>
+      <p>book tickets</p>
+    </div>
+  </div>
+</div> 
+   
+     
+</div>
+ </div>    
+<div class="column">
+    <div class="row">  
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/conference.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>conferences</h2>
+      <p>book your conference</p>
+    </div>
+  </div>
+</div> 
+   
+    </div>
+     
+     </div>
+     <div class="column">
+         <div class="row">  
+     <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/party.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>party</h2>
+      <p>host a party</p>
+    </div>
+  </div>
+</div> 
+     
+ </div>
+     </div>
+     
+<div class="column">
+  <div class="row">     
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/birthday.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>birthday parties</h2>
+      <a href="">book here</a>
+    </div>
+  </div>
+</div> 
+   
+     
+</div>
+     </div>  
+<div class="column">
+    <div class="row">  
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/indianwedding.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>wedding</h2>
+      <p>book the slots</p>
+    </div>
+  </div>
+</div> 
+   
+    </div>      
+     
+     </div>    
+     
+</div>  
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   
+
+
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    
+</body>
